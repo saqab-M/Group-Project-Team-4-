@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "383263619065",
+    "firebase_url": "https://fir-login-9d0c3.firebaseio.com",
+    "project_id": "fir-login-9d0c3",
+    "storage_bucket": "fir-login-9d0c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383263619065:android:4213a479de778b67042f28",
+        "android_client_info": {
+          "package_name": "com.example.demologin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383263619065-tdbefhtpm10246519qr8ghg5890nej52.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.demologin",
+            "certificate_hash": "cb81ca70262d070b87843702f1a9715901cea27e"
+          }
+        },
+        {
+          "client_id": "383263619065-ahdjq0atgul3v538tfqurpc79hm7hl6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDko9OiEsj693i9dksEj9mb0zvAN4G8wjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383263619065-ahdjq0atgul3v538tfqurpc79hm7hl6j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
