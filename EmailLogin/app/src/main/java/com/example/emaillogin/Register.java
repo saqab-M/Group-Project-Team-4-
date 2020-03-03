@@ -32,9 +32,9 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         //Connect variables to the resources on the page
-        mFullName = findViewById(R.id.fullName);
-        mEmail = findViewById(R.id.email);
-        mPassword = findViewById(R.id.email);
+        mFullName = findViewById(R.id.rFullName);
+        mEmail = findViewById(R.id.rEmail);
+        mPassword = findViewById(R.id.rPassword);
         mRegisterBtn = findViewById(R.id.registerBtn);
         mLoginBtn = findViewById(R.id.toLogin);
         progressBar = findViewById(R.id.registerProgressBar);
@@ -90,13 +90,25 @@ public class Register extends AppCompatActivity {
                         //If the registration is unsuccessful
                         else{
                             //Show error message
-                            Toast.makeText(Register.this, "Error in registeration " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "Error in registration " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.GONE);
+
 
                         }
                     }
                 });
 
 
+
+            }
+        });
+
+        //When the login text field is clicked
+        mLoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Send user to the main activity
+                startActivity(new Intent(getApplicationContext(),Login.class));
             }
         });
     }
