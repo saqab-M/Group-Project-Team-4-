@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "5315496477",
+    "firebase_url": "https://emaillogin-a3b94.firebaseio.com",
+    "project_id": "emaillogin-a3b94",
+    "storage_bucket": "emaillogin-a3b94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5315496477:android:39625c4593f1b64f8554f4",
+        "android_client_info": {
+          "package_name": "com.example.emaillogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5315496477-1pqif1uvatro05n3nta4re9lqnqvbkgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.emaillogin",
+            "certificate_hash": "ee99ffd7983b857142fc24b8571752b377c524df"
+          }
+        },
+        {
+          "client_id": "5315496477-lf57u2vlkdmi3j4a1vebjbbfku66k15c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN6Kl8KMCAkvClRteVJaA6HK8ZzB4v0Gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5315496477-lf57u2vlkdmi3j4a1vebjbbfku66k15c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
