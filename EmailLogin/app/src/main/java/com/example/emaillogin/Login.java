@@ -54,21 +54,18 @@ public class Login extends AppCompatActivity {
                     mPassword.setError("Enter a password");
                     return;
                 }
-                //Check if the length of the password is greater than 6 characters
-                if (password.length() < 6){
-                    mPassword.setError("Password must be greater than 6 characters");
-                    return;
-                }
                 //Make the progress bar visible
                 progressBar.setVisibility(View.VISIBLE);
 
-                //Authenticate the user
+                fAuth = FirebaseAuth.getInstance();
 
+                //Authenticate the user
                   fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                       @Override
                       public void onComplete(@NonNull Task<AuthResult> task) {
                           //If the registration is successful
                           if (task.isSuccessful()){
+                              System.out.println("Login success");
                               //Show message to the user that they've successfully logged in
                               Toast.makeText(Login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
                               //Send user to the main activity
@@ -76,6 +73,7 @@ public class Login extends AppCompatActivity {
                           }
                           //If the registration is unsuccessful
                           else{
+                              System.out.println("Login failed");
                               //Show error message
                               Toast.makeText(Login.this, "Error in login " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                               progressBar.setVisibility(View.GONE);

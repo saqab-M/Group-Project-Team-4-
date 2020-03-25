@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Register extends AppCompatActivity {
     //Create variables for the text inputs and buttons on the register page
@@ -25,6 +26,7 @@ public class Register extends AppCompatActivity {
     TextView mLoginBtn;
     ProgressBar progressBar;
     FirebaseAuth fAuth;
+    FirebaseUser currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +44,11 @@ public class Register extends AppCompatActivity {
         //Get the current instance from Firebase so we can perform the various operations
         fAuth = FirebaseAuth.getInstance();
 
+        //Get the current user
+        currentUser = fAuth.getCurrentUser();
+
         //Check if the user is already logged in
-        if(fAuth.getCurrentUser() != null){
+        if(currentUser != null){
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
             finish();
         }
